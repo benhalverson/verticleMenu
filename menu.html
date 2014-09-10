@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <title>new vertical</title>
@@ -9,22 +9,28 @@
     </head>
     <body>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="myjavascript.js"></script>
-        <section id="navigation-container">
-            <nav>
-                <ul>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <ul>
-                        <li>Inbox</li>
-                        <li>Sent</li>
-                        <li>Draft</li>
-                    </ul>
-                    <li>Settings</li>
-                    <li>Logout</li>
+    <section id="navigation-container">
+        <nav>
+            <ul>
+                <li id="profile"><i class="fa fa-user"></i> Profile</li>
+                  <ul class="child-menu1">
+                <li >Name</li>
+                    <li>Age</li>
+                    <li>location</li>
+                  </ul>
+
+                <li id="messages"><a href="#"><i class="fa fa-envelope"></i> Messages</a></li>
+                <ul class="child-menu2">
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Inbox</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Sent</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Drafts</a></li>
                 </ul>
-            </nav>
-        </section>
+                <li><i class="fa fa-cog"></i> Settings</li>
+                <li><i class="fa fa-power-off"></i> Log out</li>
+            </ul>
+        </nav>
+    </section>
     </body>
     </html>

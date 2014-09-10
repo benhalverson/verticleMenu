@@ -1,6 +1,10 @@
 $(document).ready(function() {
-    $('#toggle-child').click(function() {
-        $('.child-menu').slideToggle("fast");
+    $('#profile').click(function() {
+        $('.child-menu1').toggle("fast");
+    });
+
+    $('#messages').click(function() {
+        $('.child-menu2').toggle("fast");
     });
 
     function animateIcon(){
